@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Margarine", system-ui, sans-serif;
+  --font-display: "Margarine", system-ui, sans-serif;
+  --font-rampart: "Rampart One", system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg: #EFF6FF; /* Pastel Blue background */
+    --sidebar: #F3E8FF; /* Pastel Purple sidebar */
+    --card: #FFFFFF;
+    --text: #1E1B4B; /* Contrast indigo text */
+    --accent: #10B981; /* Pastel Green accent */
+    --neon-glow: transparent;
+    --border: rgba(0,0,0,0.1);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
+/* Custom transitions and Sleek Interface hover card graphics */
+.sleek-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sleek-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), var(--neon-glow);
+}
+
+/* Custom scrollbars matching the theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}

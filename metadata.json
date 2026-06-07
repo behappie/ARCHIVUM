@@ -1,0 +1,6 @@
+{
+  "name": "Website Repository Dashboard",
+  "description": "An interactive, responsive dashboard categorising useful tools and personal apps, featuring pastel light mode and muted neon dark mode themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
