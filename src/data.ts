@@ -79,6 +79,15 @@ export const WEBSITES_DATA: Website[] = [
     tags: ['OCR Scanner', 'Finance Tracker', 'Analyser', 'Receipts'],
     iconName: 'Receipt'
   },
+  {
+    id: 'econparser',
+    name: 'EconParser',
+    url: 'https://econparser-830231250806.asia-east1.run.app',
+    category: 'Personal Apps',
+    description: 'A specialised tool designed for rapid parsing of economic documents, extracting structured intelligence, and analysing financial dataset components.',
+    tags: ['Economics', 'Parser', 'Analyser', 'Dataset'],
+    iconName: 'TrendingUp'
+  },
 
   // (2) Gemini Gems
   {
